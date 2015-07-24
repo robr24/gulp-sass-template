@@ -1,0 +1,12 @@
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+/* primary CTA ribbon */
+body {
+  color: #f00; }

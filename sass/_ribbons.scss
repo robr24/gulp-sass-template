@@ -1,0 +1,43 @@
+
+/* primary CTA ribbon */
+@mixin ribbon($color: #fff, $bgColor: #ffce10) {
+	display: block;
+	position: relative;
+	z-index: 0;
+	.ribbon {
+		display: inline-block;
+		color: $color;
+		background-color: $bgColor;
+		position: relative;
+		text-align: center;
+		padding: 11px 5px;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.ribbon:before {
+		left: -31px;
+		border: 20px solid $bgColor;
+		border-left-color: transparent;
+	}
+
+	.ribbon:before,
+	.ribbon:after {
+		content: '';
+		position: absolute;
+		display: block;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	.ribbon:after {
+		right: -20px;
+		border-left-width: 20px;
+		border-right-color: transparent;
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 20px solid $bgColor;
+	}	
+}
