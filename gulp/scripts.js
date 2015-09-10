@@ -24,6 +24,6 @@ module.exports = function(options) {
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(uglify())
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest(options.dist + '/js/'));
   });
 }

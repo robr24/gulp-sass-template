@@ -14,6 +14,13 @@ module.exports = function(options) {
           .pipe(sass().on('error', sass.logError))
        	  .pipe(concat('main.css'))
           .pipe(gulp.dest(options.tmp + "/css/"));
-  });	
+  });
+
+  gulp.task('sass:build', function() {
+    return gulp.src('sass/**/*.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(concat('main.css'))
+      .pipe(gulp.dest(options.dist + '/css/'));
+  });
 
 }

@@ -7,7 +7,7 @@ module.exports = function(options) {
 
 
   // Static Server + watching scss/html files
-  gulp.task('serve', ['inject', 'watch'], function() {
+  gulp.task('serve', ['images', 'inject', 'watch'], function() {
       bs.init({
           server: {
             baseDir: options.tmp + '/',
