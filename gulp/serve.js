@@ -1,5 +1,4 @@
-var gulp = require('gulp'),
-    wiredep = require('wiredep').stream;
+var gulp = require('gulp');
 
 var bs = require("browser-sync").create('My Server');
 
@@ -22,7 +21,7 @@ module.exports = function(options) {
     gulp.watch(['sass/**/*.scss', 'js/**/*.js', '*.html'], ['inject']);
 
     // and call any methods on it.
-	  bs.watch(['.tmp/index.html']).on('change', bs.reload);
+	  bs.watch(['.tmp/*.html']).on('change', bs.reload);
   });
 
 }

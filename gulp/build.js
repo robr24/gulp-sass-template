@@ -1,8 +1,7 @@
 var gulp = require('gulp');
-var gulpFilter = require('gulp-filter')
 
 module.exports = function(options) {
-	gulp.task('build', ['clean:dist', 'images:build', 'sass:build', 'js:build', 'bower:build'], function() {
+	gulp.task('build', ['clean:build', 'images:build', 'sass:build', 'js:build', 'bower:build'], function() {
 		gulp.start('index:build');
 	});
 

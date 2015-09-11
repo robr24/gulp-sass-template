@@ -7,7 +7,7 @@ module.exports = function(options) {
 		return del.sync([options.tmp + '/']);
 	});
 
-	gulp.task('clean:dist', function() {
+	gulp.task('clean:build', function() {
 		return del.sync([options.dist + '/']);
 	});
 	

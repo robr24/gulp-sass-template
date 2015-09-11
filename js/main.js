@@ -1,4 +1,3 @@
 console.log('hello');
-console.log('goodbye');
+console.log('last day of class');
 
-var x = 'hi';

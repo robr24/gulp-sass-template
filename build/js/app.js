@@ -1,2 +1,2 @@
-console.log("hello"),console.log("goodbye");var x="hi";
+console.log("hello"),console.log("last day of class");
 console.log("world"),console.log("why oh why???");

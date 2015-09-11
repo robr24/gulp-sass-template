@@ -1,6 +1,6 @@
 console.log('hello');
-console.log('goodbye');
+console.log('last day of class');
 
-var x = 'hi';
+
 console.log('world');
 console.log('why oh why???');

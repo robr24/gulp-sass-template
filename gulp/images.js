@@ -3,7 +3,6 @@ var gulp = require('gulp');
 // Load plugins
 var $ = require('gulp-load-plugins')();
 
-
 module.exports = function(options) {
 	// Images
 	gulp.task('images', function () {

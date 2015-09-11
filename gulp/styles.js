@@ -1,10 +1,6 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
-    jshint = require('gulp-jshint'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    inject = require('gulp-inject'),
-    wiredep = require('wiredep').stream;
+    sass = require('gulp-sass'),
+    concat = require('gulp-concat');
 
 module.exports = function(options) {
   

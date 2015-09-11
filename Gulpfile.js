@@ -6,7 +6,8 @@ var wrench = require('wrench');
 var options = {
   src: './',
   dist: 'build',
-  tmp: '.tmp'
+  tmp: '.tmp',
+  imagesDir: 'assets/images'
 };
 
 wrench.readdirSyncRecursive('./gulp').filter(function(file) {
